@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net8.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.11" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="8.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite.Core" Version="8.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="8.0.0" />
+      <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="8.0.0">
+        <PrivateAssets>all</PrivateAssets>
+        <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      </PackageReference>
+      <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="8.0.7" />
+      <PackageReference Include="Syncfusion.EJ2.AspNet.Core" Version="27.2.5" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Areas\CategoryController\Controllers\" />
+      <Folder Include="Areas\CategoryController\Data\" />
+      <Folder Include="Areas\CategoryController\Models\" />
+      <Folder Include="Areas\CategoryController\Views\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="Views\Transaction\Create.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Transaction\Delete.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Transaction\Details.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Transaction\Edit.cshtml" />
+      <_ContentIncludedByDefault Remove="Views\Transaction\Index.cshtml" />
+    </ItemGroup>
+
+</Project>
